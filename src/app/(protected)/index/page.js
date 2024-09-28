@@ -7,7 +7,6 @@ import Image from 'next/image'
 const ChallengeCard = ({ title, progress, total, backgroundImage, initialStatus }) => {
   const [status, setStatus] = useState(initialStatus)
   const progressPercentage = (progress / total) * 100
-
   const handleComplete = () => {
     setStatus('completed')
   }
@@ -49,7 +48,7 @@ const ChallengeCard = ({ title, progress, total, backgroundImage, initialStatus 
 }
 
 const SuggestedChallengeCard = ({ title, icon }) => (
-  <div className="bg-gray-200 rounded-lg p-4 mb-4 space-y-4">
+  <div className="bg-gray-200 h-[140px] rounded-lg p-4 mb-4 space-y-4">
     <div className="flex items-center">
       {icon === 'beer' && (
         <svg className="w-6 h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">

@@ -2,6 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: 'LeagueSpartan';
+  src: url('/fonts/league_spartan/LeagueSpartan-VariableFont_wght.ttf') format('truetype');
+  font-weight: 100 900; /* Adjust according to the weights available in your font */
+  font-style: bold;
+}
+
+@font-face {
+  font-family: 'Spartan';
+  src: url('/fonts/Spartan-Light.ttf') format('truetype');
+  font-style: light;
+}
+
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -15,9 +29,9 @@
 }
 
 body {
+  font-family: 'Spartan', sans-serif,;
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
 }
 
 @layer utilities {
